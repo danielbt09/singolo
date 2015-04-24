@@ -102,10 +102,10 @@ a:hover{
 	opacity: 1;
 }
 .slider-nav.slider-nav--prev{
-	left: 240px;
+	left: 24%;
 }
 .slider-nav.slider-nav--next{
-	right: 252px;
+	left: 75%;
 }
 .pointer-hidden {
   pointer-events: none;

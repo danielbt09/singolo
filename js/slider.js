@@ -83,9 +83,53 @@ Slider.prototype.fadeIn = function() {
 };
 
 
+
+
+
+function Gallery(container){
+	this.container = container;
+	this.buttons = this.container.find('.item-selectors');
+	this.items = this.container.find('.items');
+
+	this.buttons.on('click', function(ev) {
+		ev.preventDefault();
+		var currentButton = $(ev.target);
+		var dataType = currentButton.data('type');
+
+		if ( !currentButton.hasClass('active')) {
+				this.buttons.removeClass('active');
+				currentButton.addClass('active');
+				this.filter(dataType);
+		}
+	}.bind(this));
+};
+
+Gallery.prototype.filter = function( category ) {
+	if( category == 'all') {
+		this.items
+				.not(':visible')
+				.fadeIn();
+	}
+	else {
+		this.items
+			.stop(true,true)
+			.fadeOut(0)
+			.filter(function() {
+				var dataFilter = $(this).data('itemfilter');
+	            for(var i = 0; i < dataFilter.length; i++) {
+	                if (dataFilter[i] == category)
+	                    return true;
+	            }
+			})
+			.fadeIn(1000);
+}
+};
+
+
 (function(){
 	var container = $('div.slider-container');
 		slider = new Slider( container, $('.slider-nav') );
+		x = new Gallery($('.gallery'));
 
 	slider.nav.on('click', function(){
 		slider.slide( $(this).data('dir'));
@@ -95,4 +139,23 @@ Slider.prototype.fadeIn = function() {
 		this.imgWidth = $('.slider-container').width();
 	})
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
