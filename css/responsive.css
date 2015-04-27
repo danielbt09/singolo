@@ -1,0 +1,130 @@
+@media all and (min-width:971px) {
+	a:nth-child(4n+4) img{
+		margin-right: 2%;
+	}
+}
+@media all and (max-width:970px) {
+	.box-content{
+		max-width: 48%;
+	}
+	.box-content:nth-child(3n+3){
+		margin-right: 2%; 
+	}
+	.box-content:nth-child(2n+2){
+		margin-right: 0; 
+	}
+	.box-profile{
+		max-width: 45%;
+	}
+	.box-profile:nth-child(3n+3){
+		margin-right: 2%; 
+	}
+	.box-profile:nth-child(2n+2){
+		margin-right: 0; 
+	}
+	.item-gallery img{
+		max-width: 32%;
+		margin-right: 2%;
+	}
+	.item-gallery img{
+		max-width: 32%;
+		margin-right: 2%;
+	}
+	.item-gallery a:nth-child(3n+3) img{
+		margin-right: 0;
+	}
+}
+@media all and (max-width:840px) {
+	.contact-form{
+		width: 100%;
+	}
+	.contact-info{
+		width: 100%;
+		margin-left: 0;
+	}
+}
+@media all and (max-width:660px){
+	.header-nav{
+		position: relative;
+		top:0;
+	}
+	.header-wrapper{
+		text-align: center;
+	}
+	.header-logo{
+		position: absolute;
+		left: 41px;
+	}
+	.header-nav li{
+		display: block;
+		margin-bottom: 15px;
+		margin-right: 0;
+	}
+	.header-nav ul{
+		padding-top: 75px;
+		text-align: center;
+	}
+	.header-nav li.nav-bullet{
+		display: none !important;
+	}
+	.box-content{
+		max-width: 100%;
+		margin-right: 0;
+	}
+	.item-gallery img{
+		max-width: 48%;
+	}
+	.item-gallery a:nth-child(3n+3) img{
+		margin-right: 2%;
+	}
+	.item-gallery a:nth-child(2n+2) img{
+		margin-right: 0;
+	}
+	.box-profile{
+		max-width: 100%;
+		margin-right: 0;
+	}
+	.box-content{
+		text-align: center;
+	}
+	.box-content--text{
+		width: 70%;
+		text-align:left;
+	}
+
+}
+@media all and (max-width:450px){
+	.item-gallery img{
+		max-width: 100%;
+		margin-right: 0;
+	}
+	.footer-wrapper{
+		padding-bottom: 30px;
+		text-align: center;
+	}
+	.footer-wrapper p{
+		display: block;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	.social-media{
+		position: relative;
+		display: block;
+	}
+	.contact-info--details{
+		text-align: center;
+	}
+}
+
+/*@media screen (min-width:1880px) and (max-width:1880px) */
+
+/*http://www.picssel.com/create-a-filtered-image-gallery-with-jquery-and-fancybox/
+http://www.picssel.com/demos/fboxfilteredgallery.html
+https://www.google.ro/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=scale%20pictures%20css
+https://css-tricks.com/css-media-queries/
+http://www.w3schools.com/cssref/css3_pr_mediaquery.asp*/
+
+
+
+

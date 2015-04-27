@@ -2,13 +2,16 @@
 <html>
 <head>
 	<title>Singolo</title>
-	<!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="images/favicon.ico">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-<div class="header-wrapper home">
+<div class="header-wrapper">
 	<div class="wrapper-center">
 		<div class="header-logo">Singolo<span>&#42;</span></div>
 		<div class="header-nav">
@@ -26,10 +29,9 @@
 		</div>
 	</div>
 </div>
-
 <div class="homepage">
 	<div class="slider-container">
-		<div class = "slider">
+		<div class="slider">
 			<div class="slider-image" data-number='1'>
 				<div class="title-content">
 					<img src="images/i1.png">
@@ -45,117 +47,116 @@
 		 --><div class="slider-image" data-number='3'>
 				<div class="title-content">
 					<img src="images/i1.png">
-					<img src="images/i2.png">	
-				</div>	
+					<img src="images/i2.png">
+				</div>
 			</div><!--
 		 --><div class="slider-image" data-number='4'>
 				<div class="title-content">
-					<img src="images/i1.png">
-					<img src="images/i2.png">	
+					<img src="images/i1.png"><!--
+				--><img src="images/i2.png">
 				</div>	
 			</div>
 		</div>
 	</div>	
-
-	<img class="slider-nav slider-nav--prev" src="images/prevArrow.png" data-dir='prev'>
-	<img class="slider-nav slider-nav--next" src="images/nextArrow.png"  data-dir='next'>
+	<div class="slider-nav">
+		<img class="slider-nav--prev" src="images/prevArrow.png" data-dir='prev'>
+		<img class="slider-nav--next" src="images/nextArrow.png"  data-dir='next'>
+	</div>
 </div>
-
 <div class="services-page" id="services-page">
 	<div class="wrapper-center">
-		<div class="padding-content">
-			<h1 class="main-title">Our Services</h1>
-			<p class="main-title--info">
-				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-			</p>
-			<div class="box-content">
-				<div class="box-content--image">
-					<img src="images/pen.png" alt="img">
-				</div>
-				<div class="box-content--text">
-					<h2>Custom Design</h2>
-					<p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-				</div>
-			</div><!-- 
-		--><div class="box-content">
-				<div class="box-content--image">
-					<img src="images/bulb.png" alt="img">
-				</div>
-				<div class="box-content--text">
-					<h2>Inovative Ideas</h2>
-					<p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-				</div>
-			</div><!-- 
-		--><div class="box-content">
-				<div class="box-content--image">
-					<img src="images/heart.png" alt="img">
-				</div>
-				<div class="box-content--text">
-					<h2>Love Is The Answer</h2>
-					<p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-				</div>
-			</div><!-- 
-		--><div class="box-content">
-				<div class="box-content--image">
-					<img src="images/phone.png" alt="img">
-				</div>
-				<div class="box-content--text">
-					<h2>Responsive Layout</h2>
-					<p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-				</div>
-			</div><!-- 
-		--><div class="box-content">
-				<div class="box-content--image">
-					<img src="images/bubble.png" alt="img">
-				</div>
-				<div class="box-content--text">
-					<h2>24 / 7 Support</h2>
-					<p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
-				</div>
-			</div><!-- 
-		--><div class="box-content">
-				<div class="box-content--image">
-					<img src="images/star.png" alt="img">
-				</div>
-				<div class="box-content--text">
-					<h2>Feel Like A Star</h2>
-					<p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-				</div>
+		<h1 class="main-title">Our Services</h1>
+		<p class="main-title--info">
+			Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+		</p>
+		<div class="box-content">
+			<div class="box-content--image">
+				<img src="images/pen.png" alt="img">
+			</div>
+			<div class="box-content--text">
+				<h2>Custom Design</h2>
+				<p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+			</div>
+		</div><!-- 
+	--><div class="box-content">
+			<div class="box-content--image">
+				<img src="images/bulb.png" alt="img">
+			</div>
+			<div class="box-content--text">
+				<h2>Inovative Ideas</h2>
+				<p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+			</div>
+		</div><!-- 
+	--><div class="box-content">
+			<div class="box-content--image">
+				<img src="images/heart.png" alt="img">
+			</div>
+			<div class="box-content--text">
+				<h2>Love Is The Answer</h2>
+				<p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+			</div>
+		</div><!-- 
+	--><div class="box-content">
+			<div class="box-content--image">
+				<img src="images/phone.png" alt="img">
+			</div>
+			<div class="box-content--text">
+				<h2>Responsive Layout</h2>
+				<p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+			</div>
+		</div><!-- 
+	--><div class="box-content">
+			<div class="box-content--image">
+				<img src="images/bubble.png" alt="img">
+			</div>
+			<div class="box-content--text">
+				<h2>24 / 7 Support</h2>
+				<p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+			</div>
+		</div><!-- 
+	--><div class="box-content">
+			<div class="box-content--image">
+				<img src="images/star.png" alt="img">
+			</div>
+			<div class="box-content--text">
+				<h2>Feel Like A Star</h2>
+				<p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="portfolio-page" id="portfolio-page">
 	<div class="wrapper-center">
-		<h1 class="main-title">Portfolio</h1>
+		<h1 class="main-title">Portfolio: <span class="datachange">All</span></h1>
+
 			<p class="main-title--info">
 				Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 			</p>
 			<div class="gallery">
 				<ul class="list-item-selectors">
-					<li class="item-selectors active" data-type="all">All</li>
-					<li class="item-selectors" data-type="web">Web Design</li>
-					<li class="item-selectors" data-type="graphic">Graphic Design</li>
-					<li class="item-selectors" data-type="artwork">Artwork</li>
+					<li class="item-selectors active" data-type="All">All</li>
+					<li class="item-selectors" data-type="Web">Web Design</li>
+					<li class="item-selectors" data-type="Graphic">Graphic Design</li>
+					<li class="item-selectors" data-type="Artwork">Artwork</li>
 				</ul>
 				<div class="item-gallery">
-					<a class="items" href="#" data-itemFilter='["web"]'><img src="images/image1.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["web","artwork"]'><img src="images/image2.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["web","graphic"]'><img src="images/image3.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["web"]'><img src="images/image4.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["artwork"]'><img src="images/image5.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["web"]'><img src="images/image6.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["artwork"]'><img src="images/image7.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["web"]'><img src="images/image8.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["graphic"]'><img src="images/image9.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["web"]'><img src="images/image10.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["graphic"]'><img src="images/image11.png"></a><!--
-				--><a class="items" href="#" data-itemfilter='["artwork"]'><img src="images/image12.png"></a>
+					<a class="items fancybox" rel="group" data-itemfilter='["Web"]' href="images/image1.png"><img src="images/image1.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Web","Artwork"]' href="images/image2.png"><img src="images/image2.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Web","Graphic"]' href="images/image3.png"><img src="images/image3.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Web"]' href="images/image4.png"><img src="images/image4.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Artwork"]' href="images/image5.png"><img src="images/image5.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Web"]' href="images/image6.png"><img src="images/image6.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Artwork"]' href="images/image7.png"><img src="images/image7.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Web"]' href="images/image8.png"><img src="images/image8.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Graphic"]' href="images/image9.png"><img src="images/image9.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Web"]' href="images/image10.png"><img src="images/image10.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Graphic"]' href="images/image11.png"><img src="images/image11.png"/></a><!--
+				--><a class="items fancybox" rel="group" data-itemfilter='["Artwork"]' href="images/image12.png"><img src="images/image12.png"/></a>
 				</div>	
 			</div>
 	</div>
 </div>
-<div class="about-page">
+<div class="about-page" id="about-page">
 	<div class="wrapper-center">
 		<h1 class="main-title">About Us</h1>
 		<p class="main-title--info">
@@ -229,38 +230,38 @@
 	</div>
 </div>
 </div>
-<div class="contact-page">
+<div class="contact-page" id="contact-page">
 	<div class="wrapper-center">
-		<div class="padding-content">
-			<h1 class="main-title">Get a Quote</h1>
-			<p class="main-title--info">
-				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-			</p>
-			<div class="contact-container">
-				<div class="contact-form">
-					<form action="#">
-						<input type="text" name="name" value="Name (Required)">
-						<br><br>
-						<input type="text" name="email" value="Email (Required)">
-						<br><br>
-						<input type="text" name="subject" value="Subject">
-						<br><br>
-						<textarea>Describe your project in detail...</textarea>
-					</form> 
-				</div>
-				<div class="contact-info">
-					<h3>Contact Information</h3>
-					<p>
-						Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. 
-					</p>
-					<div class="contact-info--details">
-						<p><img src="images/location.png">Elm St. 14/05 Lost City</p>
-						<p><img src="images/phone2.png">03528 331 86 35</p>
-						<p><img src="images/mail.png">info@singolo.com</p>
-					</div>
+		
+		<h1 class="main-title">Get a Quote</h1>
+		<p class="main-title--info">
+			Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+		</p>
+		<div class="contact-container">
+			<div class="contact-form">
+				<form action="#">
+					<input type="text" name="name" value="Name (Required)">
+					<br><br>
+					<input type="text" name="email" value="Email (Required)">
+					<br><br>
+					<input type="text" name="subject" value="Subject">
+					<br><br>
+					<textarea>Describe your project in detail...</textarea>
+				</form> 
+			</div>
+			<div class="contact-info">
+				<h3>Contact Information</h3>
+				<p>
+					Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. 
+				</p>
+				<div class="contact-info--details">
+					<p><img src="images/location.png">Elm St. 14/05 Lost City</p>
+					<p><img src="images/phone2.png">03528 331 86 35</p>
+					<p><img src="images/mail.png">info@singolo.com</p>
 				</div>
 			</div>
 		</div>
+
 	</div>
 </div>
 <div class="footer-wrapper">
@@ -274,7 +275,15 @@
 		</div>
 	</div>
 </div>
-		<script type="text/javascript" src="http:code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="js/slider.js"></script>
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>\
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="css/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 </body>
 </html>
