@@ -28,7 +28,7 @@ a:hover{
 	height: 100%;
 	margin: 0 auto;
 	padding-top: 67px;
-	padding-right: 10px;	
+	padding-right: 10px;
 	padding-bottom: 41px;
 	padding-left: 10px;
 }
@@ -41,8 +41,8 @@ a:hover{
 	padding: 0;
 }
 .header-logo{
-	display: inline-block;
-  	padding: 24px 0px 21px 41px;
+	position: absolute;
+  	top: 24px;
   	font-size: 25px;
   	font-weight: 700;
   	color: #fff;
@@ -52,15 +52,14 @@ a:hover{
 	color: #f06c64;
 }
 .header-nav {
-	display: inline-block;
-	position: absolute;
-  	top: 33px;
-  	right: 0px;
+	text-align: right;
+  	padding-top: 20px;
+  	padding-bottom: 15px;
+}
+.header-nav-toggle{
+	display: none;
 }
 .header-nav ul{
-    text-align: right;
-    margin: 0;
-    padding: 0;
 	text-transform: uppercase;
 	list-style-type: none;
 
@@ -91,21 +90,20 @@ a:hover{
 	width: 100%;
 }
 .title-content img:last-child {
-	margin-left: 60px;
+	/*margin-left: 60px;*/
 }
-.slider{
+.slider, .slider2{
 	width:100%;
 }
-.slider-container{
+.slider-container, .slider-container2{
 	position: relative;
 	margin: 0 auto;
 	max-width: 900px;
 	width: 100%;
 	overflow: hidden;
 }
-.slider-nav{
-	position: absolute;/*
-  	text-align: center;*/
+.slider-nav, .slider-nav2{
+	position: absolute;
   	top: 272px;
   	width: 100%;
 	cursor: pointer;
@@ -115,13 +113,16 @@ a:hover{
 .slider-nav:hover{
 	opacity: 1;
 }
+.slider-nav2:hover{
+	opacity: 1;
+}
 .slider-nav--prev{
 	position: absolute;
-	left: 14%;
+	left: 0;
 }
 .slider-nav--next{
 	position: absolute;
-	right: 14%;
+	right: 0;
 }
 .pointer-hidden {
   pointer-events: none;
@@ -298,6 +299,9 @@ a:hover{
 .contact-page{
 	background-color: #f06c64;
 	border-bottom: 6px solid #ea676b;
+}
+.contact-page--title, .contact-page--info{
+	color: #f0d8d9;
 }
 .contact-container{
 	margin-top: 48px;

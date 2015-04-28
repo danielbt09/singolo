@@ -45,8 +45,13 @@
 }
 @media all and (max-width:660px){
 	.header-nav{
-		position: relative;
-		top:0;
+		display: none;
+		padding: 0; 
+		margin: 0;
+	}
+	.header-nav-toggle{
+		display: block;
+		text-align: right;
 	}
 	.header-wrapper{
 		text-align: center;
@@ -54,6 +59,7 @@
 	.header-logo{
 		position: absolute;
 		left: 41px;
+		top: 10px;
 	}
 	.header-nav li{
 		display: block;
@@ -61,12 +67,20 @@
 		margin-right: 0;
 	}
 	.header-nav ul{
-		padding-top: 75px;
 		text-align: center;
 	}
 	.header-nav li.nav-bullet{
 		display: none !important;
 	}
+	.slider img {
+  	width: 35%;
+	}
+	.slider-nav--prev {
+  		left: 2%;
+  	}
+  	.slider-nav--next {
+  		right: 2%;
+  	}
 	.box-content{
 		max-width: 100%;
 		margin-right: 0;
@@ -94,6 +108,9 @@
 
 }
 @media all and (max-width:450px){
+	.slider img {
+  	width: 30%;
+	}
 	.item-gallery img{
 		max-width: 100%;
 		margin-right: 0;
