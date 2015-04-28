@@ -56,6 +56,11 @@ a:hover{
   	padding-top: 20px;
   	padding-bottom: 15px;
 }
+
+.header-nav.header-nav--open {
+	display: block;
+}
+
 .header-nav-toggle{
 	display: none;
 }
@@ -81,16 +86,12 @@ a:hover{
 .homepage{
 	position: relative;
 	background-color: #f06c64;
-	/*height: 530px;*/
 	overflow: hidden;
 	transition: background 3s ease;
     -webkit-user-select: none;
 }
 .title-content{
 	width: 100%;
-}
-.title-content img:last-child {
-	/*margin-left: 60px;*/
 }
 .slider, .slider2{
 	width:100%;
@@ -104,7 +105,7 @@ a:hover{
 }
 .slider-nav, .slider-nav2{
 	position: absolute;
-  	top: 272px;
+  	top: 43%;
   	width: 100%;
 	cursor: pointer;
 	z-index: 100;
@@ -134,18 +135,11 @@ a:hover{
   	padding-bottom: 58px;
 	background-size: cover;
 }
-.slider-image[data-number='1']{
-	/*background-color: #f06c64;*/
-}
 
 .services-page{
 	background-color: #f2f2f2;
 	border-bottom: 6px solid #fff;
 }
-/*.padding-content{
-	padding-top: 67px;	
-	padding-bottom: 41px;
-}*/
 .main-title{
   	font-weight: 900;
   	font-size: 30px;
@@ -227,21 +221,17 @@ a:hover{
 .list-item-selectors li{
 	margin-bottom: 10px;
 }
+.item-gallery a{
+	display: inline-block;
+	padding: 3px 5px;
+}
 .item-gallery img{
-	margin: 2%;
 	margin-left: 0;
 	margin-top: 0;
-	max-width: 23%;
 	width: 100%;
 
 }
-/*.item-gallery a:nth-child(4n+4) img{
-	margin-right: 0;
-}*/
-
 .about-page{
-	/*padding-top: 67px;	
-	padding-bottom: 41px;*/
 	background-color: #f2f2f2;
 	border-bottom: 6px solid #fff;
 }
